@@ -23,7 +23,7 @@ const Login = () => {
           password,
         }),
       });
-      res.status === 200 && router.push("/product");
+      res.status === 200 && router.push("/products");
     } catch (err) {
       setError(err);
       console.log(err);

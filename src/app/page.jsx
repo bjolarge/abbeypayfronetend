@@ -16,7 +16,7 @@ const Signup = () => {
     const password = e.target[2].value;
 
     try {
-      const res = await fetch("http://localhost:9000/auth/register", {
+      const res = await fetch("http://localhost:9000/authentication/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,7 +37,7 @@ const Signup = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Create an Account</h1>
-      <h2 className={styles.subtitle}>Please sign up to get the Xact.</h2>
+      <h2 className={styles.subtitle}>Kindly Signup below.</h2>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
           type="text"
